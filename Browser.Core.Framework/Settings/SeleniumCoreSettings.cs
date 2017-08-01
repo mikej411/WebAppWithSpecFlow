@@ -20,7 +20,7 @@ namespace Browser.Core.Framework
         /// <summary>
         /// The default driver location is .\Drivers
         /// </summary>
-        public static readonly string DriverLocationDefault = @"C:\WebApp.UITestWithSpecflow\WebApp.UITest\bin\Debug\Drivers";    // @".\Drivers";
+        public static readonly string DriverLocationDefault = @"E:\Projects\Upwork\Mike_Johnston\From_Rajesh\WebAppWithSpecFlow\WebApp.UITest\Drivers";    // @".\Drivers";
         /// <summary>                                
         /// Gets the location of the selenium drivers.  This property is guaranteed to have a trailing slash.
         /// </summary>        

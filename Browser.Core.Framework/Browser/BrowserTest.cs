@@ -301,11 +301,12 @@ namespace Browser.Core.Framework
         /// <returns></returns>
         protected BrowserMode GetBrowserMode()
         {
-            BrowserMode? mode = GetContextProperty<BrowserMode?>(SeleniumCoreSettings.BrowserModeKey, p => (BrowserMode)Enum.Parse(typeof(BrowserMode), (string)p));
-            if (mode.HasValue)
-                return mode.Value;
+            /*            BrowserMode? mode = GetContextProperty<BrowserMode?>(SeleniumCoreSettings.BrowserModeKey, p => (BrowserMode)Enum.Parse(typeof(BrowserMode), (string)p));
+                        if (mode.HasValue)
+                            return mode.Value;
 
-            return SeleniumCoreSettings.BrowserModeDefault;
+                        return SeleniumCoreSettings.BrowserModeDefault;*/
+            return BrowserMode.New;
         }
 
         /// <summary>

@@ -1,0 +1,2 @@
+E:\Projects\Upwork\Mike_Johnston\From_Rajesh\WebAppWithSpecFlow\WebApp.UITest\obj\Debug\WebApp.UITest.Properties.Resources.resources
+E:\Projects\Upwork\Mike_Johnston\From_Rajesh\WebAppWithSpecFlow\WebApp.UITest\obj\Debug\WebApp.UITest.csproj.GenerateResource.Cache
