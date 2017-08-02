@@ -7,6 +7,7 @@ using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 using WebApp.AppFramework;
 using WebApp.UITest.Tests;
+using Browser.Core.Framework;
 
 namespace WebApp.UITest.StepDefs
 {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,13 @@ namespace WebApp.UITest.Tests
         public static void CreateInstance(string browserName) {
             //string driverPath = SeleniumCoreSettings.DriverLocation;
             //  Browser = new ChromeDriver(driverPath, new BaseChromeOptions(), TimeSpan.FromMinutes(3));
+            if ((bool)SeleniumCoreSettings.Remote)
+            {
+                coreTest = new SpecFlowCoreTest(browserName, string.Empty, string.Empty, SeleniumCoreSettings.HubUri, SeleniumCoreSettings.ExtrasUri);
+            }
+            else {
+                coreTest = new SpecFlowCoreTest(browserName);
+            }
             coreTest = new SpecFlowCoreTest(browserName);
             coreTest.TestSetup();
             Browser = coreTest.Browser;

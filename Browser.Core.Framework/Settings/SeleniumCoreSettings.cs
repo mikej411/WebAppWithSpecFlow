@@ -38,8 +38,19 @@ namespace Browser.Core.Framework
         /// Gets the driver logs location.  This property is guaranteed to have a trailing slash.
         /// </summary>        
         public static string DriverLogsLocation { get; private set; }
-
         #endregion Driver
+
+        #region Remote
+        /// <summary>
+        /// Gets whether to execute remotely or locally
+        /// </summary>        
+        public static readonly string RemoteKey = "Remote";
+        /// <summary>
+        /// Gets the driver logs location.  This property is guaranteed to have a trailing slash.
+        /// </summary>        
+        public static readonly bool RemoteKeyDefault = false;
+        public static bool Remote { get; private set; }
+        #endregion
 
         #region Mode
 

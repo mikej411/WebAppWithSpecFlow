@@ -33,7 +33,7 @@ namespace Browser.Core.Framework
         private string _browserName;
 
         // Support for Selenium Grid Testing
-        private bool _isRemote = false;
+        private bool _isRemote = true;
         private string _version = null;
         private string _platform = null;
         private string _hubUri = null;
