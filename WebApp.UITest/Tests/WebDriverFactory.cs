@@ -27,7 +27,6 @@ namespace WebApp.UITest.Tests
             else {
                 coreTest = new SpecFlowCoreTest(browserName);
             }
-            coreTest = new SpecFlowCoreTest(browserName);
             coreTest.TestSetup();
             Browser = coreTest.Browser;
         }
