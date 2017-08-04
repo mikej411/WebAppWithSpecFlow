@@ -20,12 +20,15 @@ namespace WebApp.UITest.Tests
         public static void CreateInstance(string browserName) {
             //string driverPath = SeleniumCoreSettings.DriverLocation;
             //  Browser = new ChromeDriver(driverPath, new BaseChromeOptions(), TimeSpan.FromMinutes(3));
-            if ((bool)SeleniumCoreSettings.Remote)
+            bool _isRemote = Convert.ToBoolean(ConfigurationManager.AppSettings["Remote"]);
+            if (_isRemote)
             {
                 coreTest = new SpecFlowCoreTest(browserName, string.Empty, string.Empty, SeleniumCoreSettings.HubUri, SeleniumCoreSettings.ExtrasUri);
+                Console.WriteLine("In Remote");
             }
             else {
                 coreTest = new SpecFlowCoreTest(browserName);
+                Console.WriteLine("In Local");
             }
             coreTest.TestSetup();
             Browser = coreTest.Browser;

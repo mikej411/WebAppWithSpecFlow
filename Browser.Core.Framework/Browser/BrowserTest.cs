@@ -456,6 +456,7 @@ namespace Browser.Core.Framework
 
             if (!_isRemote)
             {
+                _log.Debug("value of remote is: " + _isRemote);
                 CreateLocalBrowser(commandTimeout);
             }
             else
