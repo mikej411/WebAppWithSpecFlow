@@ -47,7 +47,7 @@ namespace WebApp.UITest.StepDefs
         [When(@"I enter ""(.*)"" into the email text box")]
         public void WhenIEnterIntoTheEmailTextBox(string p0)
         {
-            HP.EmailTxt.SendKeys("blah");
+            HP.EmailTxt.SendKeys(p0);
         }
 
         [Then(@"the text box should contain ""(.*)""")]
