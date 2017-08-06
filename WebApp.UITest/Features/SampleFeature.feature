@@ -11,3 +11,8 @@ Scenario: Validate Sample Test
 	And I have navigated to the Home page again
 	When I enter "blah" into the email text box
 	Then the text box should contain "blah"
+
+@anotherTest
+Scenario: Validate this step to check Object Instance Not set
+Given I have navigated to the home page and entered "blah" into the email box
+

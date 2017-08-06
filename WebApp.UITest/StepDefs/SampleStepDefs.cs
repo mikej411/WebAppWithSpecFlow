@@ -32,6 +32,14 @@ namespace WebApp.UITest.StepDefs
             HP = Navigation.GoToHomePage(WebDriverFactory.GetDriver());
         }
 
+        [Given(@"I have navigated to the home page and entered ""(.*)"" into the email box")]
+        public void GivenIHaveNavigatedToTheHomePageAndEnteredIntoTheEmailBox(string p0)
+        {
+            HP = Navigation.GoToHomePage(WebDriverFactory.GetDriver());
+            HP.EmailTxt.SendKeys(p0);
+        }
+
+
         [Given(@"I have navigated back to the home page\. \(Navigating with menu items\)")]
         public void GivenIHaveNavigatedBackToTheHomePage_NavigatingWithMenuItems()
         {

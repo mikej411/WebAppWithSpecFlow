@@ -88,6 +88,21 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Validate this step to check Object Instance Not set")]
+        [NUnit.Framework.CategoryAttribute("anotherTest")]
+        public virtual void ValidateThisStepToCheckObjectInstanceNotSet()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate this step to check Object Instance Not set", new string[] {
+                        "anotherTest"});
+#line 16
+this.ScenarioSetup(scenarioInfo);
+#line 17
+testRunner.Given("I have navigated to the home page and entered \"blah\" into the email box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
